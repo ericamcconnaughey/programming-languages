@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <title>Programming Language Genie</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Programming Language Genie</h1>
+      <p>Ever wondered what programming language you should start learning first? Want to know the best one to tackle next? Answer the questions below and let the Genie help you decide!</p>
+    </div>
+
+    <div class="form">
+      <form class="choose-animal">
+        <div class="form-group">
+          <label for="choose">Choose your favorite animal from this list:</label>
+          <select id="choose" class="form-control">
+            <option value="elephant">elephant</option>
+            <option value="duck">duck</option>
+            <option value="capybara">capybara</option>
+          </select>
+        </div>
+        <button type="submit" class="btn bg-primary">Submit</button>
+      </form>
+    </div>
+
+
+    <div class="card" id="elephant">
+      <h2 class="card-header">Elephant</h2>
+      <div class="card-body">
+          <div class="media">
+            <img class="d-flex" src="img/elephant.jpg" alt="adult elephant" />
+          </div>
+          <div class="media-body align-self-center">
+            <ul>
+              <li>Elephants cannot jump because they don't have knees.</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" id="duck">
+        <h2 class="card-header">Duck</h2>
+        <div class="card-body">
+            <div class="media">
+              <img class="d-flex" src="img/duck.jpg" alt="duckling" />
+            </div>
+            <div class="media-body align-self-center">
+              <ul>
+                <li>Ducks are pretty cute.</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" id="capybara">
+          <h2 class="card-header">Capybara</h2>
+          <div class="card-body">
+              <div class="media">
+                <img class="d-flex" src="img/capybara.jpg" alt="capybara" />
+              </div>
+              <div class="media-body align-self-center">
+                <ul>
+                  <li>Capybara do not live in Springfield, MO.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+  </div>
+</body>
+
+</html>
