@@ -1,6 +1,6 @@
-# _{Programming Language Genie}_
+# _Programming Language Genie_
 
-#### _{This application helps young developers, and those new to web development, figure out which language would be best for them to learn.}, {12/02/2019}_
+#### _This application helps young developers, and those new to web development, figure out which language would be best for them to learn., 12/02/2019_
 
 #### By _**Erica McConnaughey**_
 
