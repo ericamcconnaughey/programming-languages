@@ -16,18 +16,30 @@ $(document).ready(function () {
     console.log(output);
 
     if (output < 12) {
-      $("#javascript").show(); 
+      $("#javascript").show();
       $("#ruby").hide();
       $("#python").hide();
+      $("form").hide();
     } else if (output >= 12 && output <= 20) {
       $("#javascript").hide();
       $("#ruby").show();
       $("#python").hide();
-    } else { 
+      $("form").hide();
+    } else {
       $("#javascript").hide();
       $("#ruby").hide();
       $("#python").show();
+      $("form").hide();
     }
 
+  })
+
+
+  $(".back").click(function () {
+    event.preventDefault();
+    $("#javascript").hide();
+    $("#ruby").hide();
+    $("#python").hide();
+    $("form").show();
   })
 })

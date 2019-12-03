@@ -1,5 +1,7 @@
 .jumbotron {
   text-align: center;
+  background-color: #563D7B;
+  color: lightgrey;
 }
 
 .bold {
@@ -8,4 +10,5 @@
 
 .card {
   display: none;
+  align-content: center;
 }
