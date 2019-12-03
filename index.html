@@ -14,67 +14,161 @@
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Programming Language Genie</h1>
-      <p>Ever wondered what programming language you should start learning first? Want to know the best one to tackle next? Answer the questions below and let the Genie help you decide!</p>
+    <div class="jumbotron d-flex">
+      <div class="row">
+        <div class="col col-12 col-md-8 col-md-offset-2">
+          <h1>Programming Language Genie</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12 col-md-8 col-md-offset-2">
+          <p>Ever wondered what programming language you should start learning first? Want to know the best one to
+            tackle next? <br /> <span class="bold">Answer the questions below and let the Genie help you decide!</span>
+          </p>
+        </div>
+      </div>
     </div>
 
+
     <div class="form">
-      <form class="choose-animal">
-        <div class="form-group">
-          <label for="choose">Choose your favorite animal from this list:</label>
-          <select id="choose" class="form-control">
-            <option value="elephant">elephant</option>
-            <option value="duck">duck</option>
-            <option value="capybara">capybara</option>
+      <form id="lang-genie">
+        <div class="form-group" id="question1">
+          <h2>Question 1</h2>
+          <label for="favAnimal">Choose your favorite animal from this list:</label>
+          <select id="favAnimal" class="form-control">
+            <option value="1">elephant</option>
+            <option value="2">duck</option>
+            <option value="3">capybara</option>
+            <option value="4">squirrel</option>
+            <option value="-1">chameleon</option>
           </select>
         </div>
-        <button type="submit" class="btn bg-primary">Submit</button>
+
+        <div class="form-group" id="question2">
+          <h2>Question 2</h2>
+          <label for="question2">Build a delicious omelette:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="eggs" value="20">
+            <label class="form-check-label" for="eggs">eggs</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="egg-whites" value="2">
+            <label class="form-check-label" for="egg-whites">egg whites</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="cheese" value="100">
+            <label class="form-check-label" for="cheese">cheese</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="bacon" value="3">
+            <label class="form-check-label" for="bacon">bacon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="onions" value="1">
+            <label class="form-check-label" for="onions">onions</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="sausage" value="-10">
+            <label class="form-check-label" for="sausage">sausage</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="mushrooms" value="5">
+            <label class="form-check-label" for="mushrooms">mushrooms</label>
+          </div>
+
+
+          <div class="form-group" id="question3">
+            <h2>Question 3</h2>
+            <label for="ageRange">How old do you feel most days? (Scale is 0 - 100 years)</label>
+            <input type="range" class="form-control-range" id="ageRange">
+          </div>
+
+          <div class="form-group" id="question4">
+            <h2>Question 4</h2>
+            <label for="question4">Would you rather: </label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="iWouldRather" id="rather1" value="6"
+                checked>
+              <label class="form-check-label" for="rather1">
+                Be a tree? or
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="iWouldRather" id="rather2" value="8">
+              <label class="form-check-label" for="rather2">
+                Live in a tree for the rest of your life?
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" id="question5">
+            <h2>Question 5</h2>
+              <label for="birthMonth">Select your birth month:</label>
+              <select multiple class="form-control" id="birthMonth">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+
+          </div>
+          <button type="submit" class="btn bg-primary">Submit</button>
       </form>
+      <br />
+      <br />
     </div>
 
 
     <div class="card" id="elephant">
       <h2 class="card-header">Elephant</h2>
       <div class="card-body">
-          <div class="media">
-            <img class="d-flex" src="img/elephant.jpg" alt="adult elephant" />
-          </div>
-          <div class="media-body align-self-center">
-            <ul>
-              <li>Elephants cannot jump because they don't have knees.</li>
-            </ul>
-          </div>
+        <div class="media">
+          <img class="d-flex" src="#" alt="adult elephant" />
+        </div>
+        <div class="media-body align-self-center">
+          <ul>
+            <li>Elephants cannot jump because they don't have knees.</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="card" id="duck">
-        <h2 class="card-header">Duck</h2>
-        <div class="card-body">
-            <div class="media">
-              <img class="d-flex" src="img/duck.jpg" alt="duckling" />
-            </div>
-            <div class="media-body align-self-center">
-              <ul>
-                <li>Ducks are pretty cute.</li>
-              </ul>
-            </div>
+      <h2 class="card-header">Duck</h2>
+      <div class="card-body">
+        <div class="media">
+          <img class="d-flex" src="#" alt="duckling" />
+        </div>
+        <div class="media-body align-self-center">
+          <ul>
+            <li>Ducks are pretty cute.</li>
+          </ul>
         </div>
       </div>
+    </div>
 
-      <div class="card" id="capybara">
-          <h2 class="card-header">Capybara</h2>
-          <div class="card-body">
-              <div class="media">
-                <img class="d-flex" src="img/capybara.jpg" alt="capybara" />
-              </div>
-              <div class="media-body align-self-center">
-                <ul>
-                  <li>Capybara do not live in Springfield, MO.</li>
-                </ul>
-              </div>
-          </div>
+    <div class="card" id="capybara">
+      <h2 class="card-header">Capybara</h2>
+      <div class="card-body">
+        <div class="media">
+          <img class="d-flex" src="#" alt="capybara" />
         </div>
+        <div class="media-body align-self-center">
+          <ul>
+            <li>Capybara do not live in Springfield, MO.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
